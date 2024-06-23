@@ -16,7 +16,7 @@ function App() {
      code
     }
     try{
-      const {data} = await axios.post('http://localhost:5000/run', payload);
+      const {data} = await axios.post('https://oc-f-service.onrender.com/run', payload);
     console.log(data);
     setOutput(data.output);
     
